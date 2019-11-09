@@ -253,8 +253,7 @@ _CHAR_TABLE = {
 
 
 class Adafruit_SO1602():
-#    def __init__(self, i2c, address=0x3c, cursor = False,blink = False):
-    def __init__(self, i2c, address, cursor, blink):
+    def __init__(self, cursor, blink):
         self.displayClear()
         self.returnHome()
         self.displayOn(cursor, blink)
@@ -325,7 +324,7 @@ class Adafruit_SO1602_I2C(Adafruit_SO1602): # pylint: disable=invalid-name
     def __init__(self, i2c, address=0x3c, cursor = False,blink = False):
         import adafruit_bus_device.i2c_device as i2c_device
         self._i2c = i2c_device.I2CDevice(i2c, address)
-        super().__init__(i2c = i2c, address = address, cursor = cursor, blink = blink)
+        super().__init__(cursor = cursor, blink = blink)
 
     def _read_register(self, register, length):
         """Low level register reading over I2C, returns a list of values"""
