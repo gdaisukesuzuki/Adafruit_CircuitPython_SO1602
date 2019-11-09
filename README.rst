@@ -1,3 +1,10 @@
+What is Adafruit CircuitPython SO1602
+=====================================
+a Pythons library which handles SO1602 
+(charactor-based OEL modulesJapan's Akizuki Electronics provides)
+described like adafruit's circuitpython...
+
+
 Introduction
 ============
 
