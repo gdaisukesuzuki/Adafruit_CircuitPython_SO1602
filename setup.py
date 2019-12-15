@@ -23,7 +23,7 @@ setup(
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
 
-    description='CircuitPython driver for the BMP280.',
+    description='CircuitPython driver for the SO1602.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
 
